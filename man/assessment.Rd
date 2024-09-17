@@ -42,7 +42,7 @@ the default questioning rule is 'half_split'.}
 
 \item{SC}{The Stopping criterion for the assessment is a numeric vector of values between 0 and 1.
 When the "termination" parameter is "likelihood_maximization" this is a single scalar that corresponds to the likelihood that a knowledge state needed to terminates the assessment.
-When the "termination" parameter is "items_discrimination" this is a numeric vector of length two, the assessment terminate if the the marginal likelihood of each item is outiside of the interval between the two elements.}
+When the "termination" parameter is "items_discrimination" this is a numeric vector of length two, the assessment terminate if the the marginal likelihood of each item is outside of the interval between the two elements.}
 
 \item{N_items}{Number of items in the test. Optional entry in case of adaptive = FALSE.}
 
@@ -125,8 +125,8 @@ eta <- rep(0.1,ncol(states))
 beta <- rep(0.1,ncol(states))
 likelihood <-rep(1,nrow(states))/nrow(states)
 
-token <- assessment(likelihood,states,beta,eta,textq=TextQuestion,
-                    textr=TextResponse,simulation=FALSE)
+\dontrun{token <- assessment(likelihood,states,beta,eta,textq=TextQuestion,
+                    textr=TextResponse,simulation=FALSE)}
 }
 \references{
 Doignon, J.-P., & Falmagne, J.-C. (1999). Knowledge spaces. Springer.

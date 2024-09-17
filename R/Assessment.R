@@ -14,7 +14,7 @@
 #'  all the items is outside the interval of the stopping criteria (Donadello, Spoto, Sambo, Badaloni, Granziol, Vidotto, 2017).
 #' @param SC The Stopping criterion for the assessment is a numeric vector of values between 0 and 1.
 #'  When the "termination" parameter is "likelihood_maximization" this is a single scalar that corresponds to the likelihood that a knowledge state needed to terminates the assessment.
-#'  When the "termination" parameter is "items_discrimination" this is a numeric vector of length two, the assessment terminate if the the marginal likelihood of each item is outiside of the interval between the two elements.
+#'  When the "termination" parameter is "items_discrimination" this is a numeric vector of length two, the assessment terminate if the the marginal likelihood of each item is outside of the interval between the two elements.
 #' @param ki  A number indicating the row in the structure to simulate as the true knowledge states.
 #' @param textq  A character vector containing the text of the questions.
 #' @param textr  A list containing for each question the correct and incorrect answers.
@@ -90,8 +90,8 @@
 #' beta <- rep(0.1,ncol(states))
 #' likelihood <-rep(1,nrow(states))/nrow(states)
 #'
-#' token <- assessment(likelihood,states,beta,eta,textq=TextQuestion,
-#'                     textr=TextResponse,simulation=FALSE)
+#' \dontrun{token <- assessment(likelihood,states,beta,eta,textq=TextQuestion,
+#'                     textr=TextResponse,simulation=FALSE)}
 assessment<-function(likelihood = NA , states, beta, eta, questioning_rule = "half_split", termination="likelihood_maximization", SC = .5,
                      N_items=NULL,  ki=1,textq= NULL, textr=NULL,
                      repetition=FALSE, adaptive=TRUE,simulation=TRUE, interactiveplot= FALSE)

@@ -24,7 +24,7 @@ stopping_criterion(
 
 \item{SC}{The Stopping criterion for the assessment is a numeric vector of values between 0 and 1.
 When the "termination" parameter is "likelihood_maximization" this is a single scalar that corresponds to the likelihood that a knowledge state needed to terminates the assessment.
-When the "termination" parameter is "items_discrimination" this is a numeric vector of length two, the assessment terminate if the the marginal likelihood of each item is outiside of the interval between the two elements.}
+When the "termination" parameter is "items_discrimination" this is a numeric vector of length two, the assessment terminate if the the marginal likelihood of each item is outside of the interval between the two elements.}
 }
 \value{
 Return TRUE if the assessment should terminates under the criteria, otherwise  FALSE

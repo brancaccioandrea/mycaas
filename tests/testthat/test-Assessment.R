@@ -10,8 +10,8 @@ test_that("Convergence of the Assessment 1", {
                     0,1,1,1,1,
                     1,1,0,1,1,
                     1,1,1,1,1), byrow=TRUE, ncol=5)
-  beta  <-c(.004,.03,.02,.01,.007)
-  eta   <-c(5e-06, 5e-05, 4e-05,.007,.08)
+  beta  <- integer(5)
+  eta   <- integer(5)
   likelihood <-rep(1,nrow(states))/nrow(states)
   expect_equal(assessment(likelihood,states,beta,eta,ki=4,SC=c(.9))$kstate[[1]],4)
 })

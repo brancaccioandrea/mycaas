@@ -7,10 +7,10 @@
 #' @format A assessment object based on six multiple choice items.
 #' \describe{
 #' \item{states}{Structure with six items and twelve states.}
-#' \item{likelihood}{Uniformly ditrubuted across the states.}
+#' \item{likelihood}{Uniformly distributed across the states.}
 #' \item{Stopping_rule}{The stopping rules is "likelihood_maximization" with a criterion of .5.}
 #' \item{Question}{Six multiple choice items.}
-#' \item{adaptive}{The value is set on TRUE allowing adaptive adminstration.}
+#' \item{adaptive}{The value is set on TRUE allowing adaptive administration.}
 #' \item{repetition}{The value is set on FALSE not allowing items repetition.}
 #' }
 #'@source {Created to serve as an Example for this package.}

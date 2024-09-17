@@ -10,9 +10,9 @@ run_Practice <- function() {
   {
     stop("The shiny package is required to run this function.")
   }
-  appDir <- system.file("App","App.R", package = "AAT")
+  appDir <- system.file("App","App.R", package = "mycass")
   if (appDir == "") {
-    stop("Could not find example directory. Try re-installing `AAT`.", call. = FALSE)
+    stop("Could not find example directory. Try re-installing `mycass`.", call. = FALSE)
   }
   shiny::runApp(appDir = appDir)
 }
