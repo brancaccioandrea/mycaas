@@ -1,4 +1,4 @@
 library(testthat)
-library(AAT)
+library(mycass)
 
-test_check("AAT")
+test_check("mycass")
