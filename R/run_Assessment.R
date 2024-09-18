@@ -16,8 +16,8 @@ run_Assessment <- function(file = NULL) {
     stop("The variable 'file' need to be an 'assessment' type object." )
   }
   # Path to the ui.R and server.R files within the package
-  ui_file <- system.file("Single", "ui.R", package = "AAT")
-  server_file <- system.file("Single", "server.R", package = "AAT")
+  ui_file <- system.file("Single", "ui.R", package = "mycaas")
+  server_file <- system.file("Single", "server.R", package = "mycaas")
 
   # Create a local environment to source the files into
   local_env <- new.env()
