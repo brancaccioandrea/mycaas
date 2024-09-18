@@ -1,5 +1,5 @@
 Type: Package
-Package: mycass
+Package: mycaas
 Title: My Computerized Adaptive Assessment
 Version: 0.0.1
 Author: Andrea Brancaccio [aut, cph ,cre], 
