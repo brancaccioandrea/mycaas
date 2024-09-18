@@ -1,4 +1,4 @@
 library(testthat)
-library(mycass)
+library(mycaas)
 
-test_check("mycass")
+test_check("mycaas")
