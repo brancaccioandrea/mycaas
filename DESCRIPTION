@@ -2,8 +2,13 @@ Type: Package
 Package: mycaas
 Title: My Computerized Adaptive Assessment
 Version: 0.0.1
-Author: Andrea Brancaccio [aut, cph ,cre], 
-        Umberto Granziol [aut, ctb]
+Authors@R: c(person(given = "Andrea",
+                      family = "Brancaccio",
+                      role = c("aut", "cph", "cre"),
+                      email = "andreabrancaccio01@gmail.com"),
+               person(given = "Umberto",
+                      family = "Granziol",
+                      role = c("aut", "ctb")))
 Maintainer: Andrea Brancaccio <andreabrancaccio01@gmail.com>
 Description: Implementation of adaptive assessment procedures based
     on Knowledge Space Theory (KST) and Formal Psychological Assessment
