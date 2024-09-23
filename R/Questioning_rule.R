@@ -50,7 +50,7 @@ half_split<-function(likelihood,states,beta,eta,Q_pool=NA){
     stop(paste0("The cardinality of  the knowledge structure is ",nrow(states)," while the length of the likelihood is ",length(likelihood),
                 " which sums to ",round(sum(likelihood),0),".\n"))
   }
-  ifelse(any(is.na(Q_pool)),it<-rep(1,ncol(states)),{it<-integer(ncol(states));it[Q_pool]<-1})
+  ifelse(any(is.na(Q_pool)),{it<-rep(1,ncol(states)); Q_pool<-which(it==1)},{it<-integer(ncol(states));it[Q_pool]<-1})
   L_Kg<-sapply(1:ncol(states), function(item,Likelhood,K,it) sum(Likelhood[K[,item]==1]*it[item]), Likelhood=likelihood, K=states, it=it)
     d<-intersect(which(round(abs(2*L_Kg-1),4)==round(min(abs(2*L_Kg-1)),4)),Q_pool)
     if(length(d)>1){
