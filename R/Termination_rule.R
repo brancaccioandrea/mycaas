@@ -54,7 +54,7 @@ if(termination=="likelihood_maximization"){
   stopping<-any(likelihood>SC[1])
 }else if(termination=="items_discrimination"){
   #Computing the marginal likelihood of each items
-  L_Kg <- c(likelihood%*%states)
+  L_Kg <- colSums(likelihood*states)
   stopping<-all(L_Kg>SC[2]|L_Kg<SC[1])
 }
 return(stopping)
