@@ -20,7 +20,8 @@ plot.assessment<- function(x,bg_color=NULL,verices_color="black",...) {
   {
     stop("There is not states field in the object")
   }
-
+  oldpar<-par(no.readonly = TRUE)
+  on.exit(par(oldpar))
     K<-as.data.frame(x$states)
     likelihood<-x$likelihood
     color<- grDevices::heat.colors(100)
