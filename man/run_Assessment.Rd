@@ -19,6 +19,6 @@ iii) The GUI implementation of the adaptive assessment
 \examples{
 # Try the test example yourself
 data(AA_knowledge_test)
-\dontrun{
+if(interactive()){
 run_Assessment(AA_knowledge_test)}
 }

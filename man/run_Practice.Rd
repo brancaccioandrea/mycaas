@@ -14,3 +14,8 @@ This function run a shinyApp in which the following pages are available:
 i) a brief introduction of the assessment tools; ii) the GUI to create "assessment" files from a "csv" of items;
 iii) the GUI implementation of the adaptive assessment; and iv) the GUI implementation of the outcome.
 }
+\examples{
+# Try to build your test
+if(interactive()){
+run_Practice()}
+}

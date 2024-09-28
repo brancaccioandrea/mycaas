@@ -5,6 +5,10 @@
 #' iii) the GUI implementation of the adaptive assessment; and iv) the GUI implementation of the outcome.
 #' @return The results of the assessment
 #' @export
+#' @examples
+#' # Try to build your test
+#' if(interactive()){
+#' run_Practice()}
 run_Practice <- function() {
   if(system.file(package='shiny')=="")
   {

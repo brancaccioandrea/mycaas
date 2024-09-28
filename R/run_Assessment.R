@@ -8,7 +8,7 @@
 #' @examples
 #' # Try the test example yourself
 #' data(AA_knowledge_test)
-#' \dontrun{
+#' if(interactive()){
 #' run_Assessment(AA_knowledge_test)}
 run_Assessment <- function(file = NULL) {
   if(!methods::is(file,'assessment'))
